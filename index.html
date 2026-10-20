@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bản demo giao diện thương mại điện tử tối giản, tập trung cải tiến khu vực Best Sellers.">
+  <title>Allbirds — Best Sellers Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <!-- Header minh họa để thể hiện cách khu vực Best Sellers hòa vào trang chủ.
+       Khi tích hợp dự án thật, giữ header/banner hiện tại và chỉ thay section Best Sellers. -->
+  <div class="announcement">Free shipping on orders over $75</div>
+  <header class="site-header">
+    <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+    <nav class="nav nav-left" aria-label="Danh mục chính">
+      <a href="#men">Men</a>
+      <a href="#women">Women</a>
+      <a href="#new-arrivals">New Arrivals</a>
+    </nav>
+    <a class="wordmark" href="#" aria-label="Allbirds trang chủ">allbirds</a>
+    <nav class="nav nav-right" aria-label="Tài khoản và mua sắm">
+      <a href="#sustainability">Our Materials</a>
+     <a href="#search" aria-label="Search">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</a>
+     <a href="#account" aria-label="Account">
+  <i class="fa-regular fa-user"></i>
+</a>
+    <a href="#cart" class="cart-link" aria-label="Cart">
+  <i class="fa-solid fa-bag-shopping"></i>
+  <span id="cart-count">0</span>
+</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Giới thiệu bộ sưu tập">
+      <div class="hero-copy">
+        <p class="eyebrow">Made for everyday</p>
+        <h1>Comfort in every step.</h1>
+        <p>Thiết kế tối giản cho những chuyển động mỗi ngày.</p>
+        <a class="hero-link" href="#best-sellers">Shop best sellers <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Giày sneaker tông màu trung tính"></div>
+    </section>
+
+    <!-- KHU VỰC CẢI TIẾN: chỉ thay nội dung trong section này khi tích hợp vào website gốc -->
+    <section class="best-sellers section-shell" id="best-sellers" aria-labelledby="best-sellers-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Customer favorites</p>
+          <h2 id="best-sellers-title">Best Sellers</h2>
+          <p class="section-description">Những lựa chọn được yêu thích cho sự thoải mái mỗi ngày.</p>
+        </div>
+        <a class="view-all" href="#all-products">Shop all <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-product="Tree Runner">
+          <a class="product-image-link" href="#tree-runner" aria-label="Xem Tree Runner">
+            <span class="product-badge">Bestseller</span>
+            <img class="product-image" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Giày sneaker màu đỏ, ảnh minh họa sản phẩm" loading="lazy">
+          </a>
+          <div class="product-info">
+            <div class="product-title-row">
+              <h3>Tree Runner</h3>
+              <p class="product-price">2.490.000₫</p>
+            </div>
+            <p class="product-subtitle">Natural comfort · Everyday sneaker</p>
+            <fieldset class="size-picker">
+              <legend>Chọn size (EU)</legend>
+              <div class="size-options" role="group" aria-label="Chọn kích cỡ Tree Runner">
+                <button type="button" class="size-option" aria-pressed="false">39</button>
+                <button type="button" class="size-option" aria-pressed="false">40</button>
+                <button type="button" class="size-option" aria-pressed="false">41</button>
+                <button type="button" class="size-option" aria-pressed="false">42</button>
+                <button type="button" class="size-option" aria-pressed="false">43</button>
+              </div>
+            </fieldset>
+            <button class="add-to-cart" type="button">Add to cart <span aria-hidden="true">+</span></button>
+            <p class="card-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+
+        <article class="product-card" data-product="Wool Runner">
+          <a class="product-image-link" href="#wool-runner" aria-label="Xem Wool Runner">
+            <img class="product-image" src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=85" alt="Giày sneaker tông sáng, ảnh minh họa sản phẩm" loading="lazy">
+          </a>
+          <div class="product-info">
+            <div class="product-title-row">
+              <h3>Wool Runner</h3>
+              <p class="product-price">2.790.000₫</p>
+            </div>
+            <p class="product-subtitle">Soft feel · Lightweight sneaker</p>
+            <fieldset class="size-picker">
+              <legend>Chọn size (EU)</legend>
+              <div class="size-options" role="group" aria-label="Chọn kích cỡ Wool Runner">
+                <button type="button" class="size-option" aria-pressed="false">39</button>
+                <button type="button" class="size-option" aria-pressed="false">40</button>
+                <button type="button" class="size-option" aria-pressed="false">41</button>
+                <button type="button" class="size-option" aria-pressed="false">42</button>
+                <button type="button" class="size-option" aria-pressed="false">43</button>
+              </div>
+            </fieldset>
+            <button class="add-to-cart" type="button">Add to cart <span aria-hidden="true">+</span></button>
+            <p class="card-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+
+        <article class="product-card" data-product="Tree Dasher">
+          <a class="product-image-link" href="#tree-dasher" aria-label="Xem Tree Dasher">
+            <img class="product-image" src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=85" alt="Giày thể thao màu trung tính, ảnh minh họa sản phẩm" loading="lazy">
+          </a>
+          <div class="product-info">
+            <div class="product-title-row">
+              <h3>Tree Dasher</h3>
+              <p class="product-price">3.190.000₫</p>
+            </div>
+            <p class="product-subtitle">Active support · Running shoe</p>
+            <fieldset class="size-picker">
+              <legend>Chọn size (EU)</legend>
+              <div class="size-options" role="group" aria-label="Chọn kích cỡ Tree Dasher">
+                <button type="button" class="size-option" aria-pressed="false">39</button>
+                <button type="button" class="size-option" aria-pressed="false">40</button>
+                <button type="button" class="size-option" aria-pressed="false">41</button>
+                <button type="button" class="size-option" aria-pressed="false">42</button>
+                <button type="button" class="size-option" aria-pressed="false">43</button>
+              </div>
+            </fieldset>
+            <button class="add-to-cart" type="button">Add to cart <span aria-hidden="true">+</span></button>
+            <p class="card-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+
+        <article class="product-card" data-product="Wool Piper">
+          <a class="product-image-link" href="#wool-piper" aria-label="Xem Wool Piper">
+            <img class="product-image" src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=900&q=85" alt="Giày sneaker phong cách tối giản, ảnh minh họa sản phẩm" loading="lazy">
+          </a>
+          <div class="product-info">
+            <div class="product-title-row">
+              <h3>Wool Piper</h3>
+              <p class="product-price">2.290.000₫</p>
+            </div>
+            <p class="product-subtitle">Classic shape · Easy everyday style</p>
+            <fieldset class="size-picker">
+              <legend>Chọn size (EU)</legend>
+              <div class="size-options" role="group" aria-label="Chọn kích cỡ Wool Piper">
+                <button type="button" class="size-option" aria-pressed="false">39</button>
+                <button type="button" class="size-option" aria-pressed="false">40</button>
+                <button type="button" class="size-option" aria-pressed="false">41</button>
+                <button type="button" class="size-option" aria-pressed="false">42</button>
+                <button type="button" class="size-option" aria-pressed="false">43</button>
+              </div>
+            </fieldset>
+            <button class="add-to-cart" type="button">Add to cart <span aria-hidden="true">+</span></button>
+            <p class="card-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="brand-note" id="sustainability">
+      <p class="eyebrow">Better things in a better way</p>
+      <h2>Comfort that moves with you.</h2>
+      <p>Phần nội dung minh họa bên dưới Best Sellers — khi tích hợp, hãy giữ nguyên nội dung gốc của website.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-wordmark">allbirds</span>
+    <p>Demo giao diện phục vụ bài tập HTML5 &amp; CSS3. Tên, giá và ảnh sản phẩm chỉ mang tính minh họa.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
