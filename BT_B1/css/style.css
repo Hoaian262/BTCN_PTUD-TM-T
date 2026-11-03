@@ -1,19 +1,4 @@
-/* ==========================================================
-   Bài tập cá nhân Buổi 2 — HTML5 & CSS3
-   Khu vực cải tiến: Best Sellers (danh sách 4 sản phẩm)
-   Cấu trúc file:
-   1. Biến màu và thiết lập cơ bản (Bước 3)
-   2. Header và menu — Flexbox/Grid (Bước 5)
-   3. Hero
-   4. Tiêu đề khu vực Best Sellers — Flexbox (Bước 5)
-   5. Lưới sản phẩm — CSS Grid (Bước 6)
-   6. Thẻ sản phẩm — selector và Box Model (Bước 4)
-   7. Chọn size và nhóm nút — Flexbox, hover, focus (Bước 5, 7)
-   8. Brand note và footer
-   9. Responsive (Bước 8)
-   ========================================================== */
- 
-/* 1. BIẾN MÀU VÀ THIẾT LẬP CƠ BẢN ------------------------- */
+ /* 1. BIẾN MÀU VÀ THIẾT LẬP CƠ BẢN*/
 :root {
   --ink: #212121;
   --muted: #696969;
