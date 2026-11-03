@@ -1,39 +1,88 @@
-# BTCN_PTUD-TM-T
-Repository này lưu trữ mã nguồn, tài liệu và các phiên bản phát triển của dự án bài tập Phát triển ứng dụng Web/Thương mại điện tử (PTUD TMĐT).
+# Allbirds Best Sellers Demo
 
-**Phát triển ứng dụng WEB/TMĐT**  
+## 1. Giới thiệu dự án
 
-## 1. Giới thiệu
+Đây là bài tập cá nhân Buổi 2 của môn Phát triển ứng dụng thương mại điện tử tại Trường Đại học Kinh tế TP.HCM (UEH).
 
-Dự án xây dựng giao diện website thương mại điện tử lấy cảm hứng từ Allbirds, tập trung vào việc hiển thị sản phẩm và cải thiện bố cục thanh điều hướng. Giao diện được thiết kế để phù hợp với cả màn hình máy tính và điện thoại.
+Dự án xây dựng và cải tiến giao diện trang Best Sellers của website Allbirds bằng HTML5 và CSS3.
+
+Thông tin dự án:
+- Tên dự án: Allbirds Best Sellers Demo
+- Loại dự án: Giao diện website thương mại điện tử
+- Đối tượng thực hành: Trang giới thiệu và hiển thị sản phẩm
+- Ngôn ngữ: HTML5, CSS3
+- Repository: [Dán đường dẫn GitHub tại đây]
 
 ## 2. Website tham khảo
 
-- **Tên website:** Allbirds
-- **URL:** https://www.allbirds.com/
-- **Khu vực đã khảo sát:** Thanh điều hướng và khu vực hiển thị sản phẩm.
+- Website: https://www.allbirds.com/
+- Trang tham khảo: Best Sellers
+- Nội dung tham khảo: Cách tổ chức danh mục sản phẩm, bố cục thẻ sản phẩm, hình ảnh và các thành phần điều hướng.
 
-## 3. Chức năng
+## 3. Nội dung triển khai
 
-- Hiển thị danh sách sản phẩm.
-- Hiển thị tên và giá sản phẩm.
-- Hỗ trợ bố cục trên nhiều kích thước màn hình.
-- Hiển thị số lượng sản phẩm trong giỏ hàng và hỗ trợ thao tác thêm sản phẩm theo chức năng đã triển khai.
+Dự án tập trung vào các nội dung sau:
 
-## 4. Công nghệ
+### HTML5
+- Sử dụng các thẻ Semantic HTML như header, nav, main, section, article và footer.
+- Tổ chức nội dung theo từng khu vực.
+- Sử dụng thẻ img kèm thuộc tính alt.
+- Xây dựng nhóm lựa chọn kích cỡ bằng fieldset, legend, input radio và label.
 
-- HTML5
-- CSS3
-- JavaScript
+### CSS3
+- Thiết lập font chữ, màu sắc và khoảng cách.
+- Áp dụng CSS Selector để định dạng các thành phần.
+- Vận dụng Box Model gồm content, padding, border và margin.
+- Sử dụng Flexbox để bố trí các thành phần.
+- Sử dụng CSS Grid để tổ chức danh sách sản phẩm.
+- Thiết kế giao diện responsive.
+- Áp dụng pseudo-class :hover và :focus-visible.
 
-## 5. Cách chạy
+## 4. Cấu trúc thư mục
 
-Mở file `index.html` bằng trình duyệt web để xem giao diện.
+```text
+BT_B1/
+│
+├── index.html
+├── CSS/
+│   └── style.css
+│
+├── README.md
+└── AI_USAGE.md
+```
 
-## 6. Cải tiến đã thực hiện
+Lưu ý: Cấu trúc trên cần được điều chỉnh theo thư mục thực tế trong repository.
 
-Thanh điều hướng ban đầu hiển thị các mục Search, Account và Bag bằng chữ. Em đã thay đổi chúng thành các biểu tượng tìm kiếm, tài khoản và giỏ hàng để giao diện gọn gàng, trực quan hơn. Đồng thời, em điều chỉnh CSS để sắp xếp khoảng cách, kích thước biểu tượng và hỗ trợ hiển thị trên màn hình điện thoại.
+## 5. Hướng dẫn chạy dự án
 
-## 7. Hỗ trợ từ AI
+1. Truy cập repository trên GitHub.
+2. Tải mã nguồn về máy hoặc Clone repository.
+3. Mở thư mục dự án bằng Visual Studio Code.
+4. Mở file index.html bằng trình duyệt.
+5. Có thể dùng tiện ích Live Server để chạy và kiểm tra giao diện.
 
-AI hỗ trợ phân tích giao diện, giải thích vai trò của các thành phần HTML/CSS và đề xuất cách điều chỉnh thanh điều hướng. Em đã kiểm tra giao diện trên trình duyệt, điều chỉnh mã nguồn và đối chiếu kết quả trước và sau khi sửa.
+## 6. Kiểm thử giao diện
+
+Các nội dung cần kiểm tra:
+
+- Hiển thị nội dung HTML.
+- Hiển thị hình ảnh sản phẩm.
+- Hoạt động của các liên kết.
+- Bố cục danh sách sản phẩm.
+- Hiển thị trên màn hình Desktop, Tablet và Mobile.
+- Hiệu ứng hover và focus.
+- Khả năng lựa chọn kích cỡ sản phẩm.
+
+Kết quả kiểm thử được cập nhật theo tình trạng thực tế của giao diện.
+
+## 7. Công cụ thực hiện
+
+- Visual Studio Code.
+- Google Chrome.
+- Chrome DevTools.
+- Git và GitHub.
+- ChatGPT hỗ trợ đọc hiểu, phân tích và rà soát mã nguồn.
+
+## 8. Tài liệu liên quan
+
+Chi tiết quá trình sử dụng AI được trình bày tại file [AI_USAGE.md](AI_USAGE.md).
